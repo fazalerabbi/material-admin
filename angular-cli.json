@@ -1,0 +1,83 @@
+{
+  "project": {
+    "version": "1.0.0-beta.21",
+    "name": "matrial-admin"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "mobile": false,
+      "styles": [
+        "styles.css",
+        "../node_modules/adminbsb-materialdesign/plugins/bootstrap/css/bootstrap.min.css",
+        "../node_modules/adminbsb-materialdesign/plugins/node-waves/waves.min.css",
+        "../node_modules/adminbsb-materialdesign/plugins/animate-css/animate.min.css",
+        "../node_modules/adminbsb-materialdesign/css/style.min.css",
+        "../node_modules/adminbsb-materialdesign/css/themes/all-themes.min.css"
+      ],
+      "scripts": [
+        "../node_modules/adminbsb-materialdesign/plugins/jquery/jquery.min.js",
+        "../node_modules/adminbsb-materialdesign/plugins/bootstrap/js/bootstrap.min.js",
+        "../node_modules/adminbsb-materialdesign/plugins/bootstrap-select/js/bootstrap-select.min.js",
+        "../node_modules/adminbsb-materialdesign/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
+        "../node_modules/adminbsb-materialdesign/plugins/node-waves/waves.min.js",
+        "../node_modules/adminbsb-materialdesign/plugins/jquery-countto/jquery.countTo.js",
+        "../node_modules/adminbsb-materialdesign/plugins/raphael/raphael.min.js",
+        "../node_modules/adminbsb-materialdesign/plugins/morrisjs/morris.min.js",
+        "../node_modules/adminbsb-materialdesign/plugins/chartjs/Chart.bundle.min.js",
+        "../node_modules/adminbsb-materialdesign/plugins/flot-charts/jquery.flot.js",
+        "../node_modules/adminbsb-materialdesign/plugins/flot-charts/jquery.flot.resize.js",
+        "../node_modules/adminbsb-materialdesign/plugins/flot-charts/jquery.flot.pie.js",
+        "../node_modules/adminbsb-materialdesign/plugins/flot-charts/jquery.flot.categories.js",
+        "../node_modules/adminbsb-materialdesign/plugins/flot-charts/jquery.flot.time.js",
+        "../node_modules/adminbsb-materialdesign/plugins/jquery-sparkline/jquery.sparkline.js",
+        "../node_modules/adminbsb-materialdesign/js/admin.js",
+        "../node_modules/adminbsb-materialdesign/js/pages/index.js",
+        "../node_modules/adminbsb-materialdesign/js/demo.js"
+      ],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "prefixInterfaces": false,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+}
